@@ -5,6 +5,19 @@ $turquoise: #40e0d0;
 $white: #fff;
 $dark-blue: #005f9e;
 
+$yellow: #ffe135;
+$yellow-light: #fff176;
+$yellow-border: #ffb347;
+$yellow-shadow: #d1a000;
+
+$blue: #40c4ff;
+$pink: #ff4081;
+$shine-orange: #ff9900;
+$blue-text: #0073e6;
+
+$bg: linear-gradient(to right, #fefbd8, #fffcc4);
+$font: 'Comic Sans MS', cursive;
+
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   background: linear-gradient(to bottom, $blue 0%, $turquoise 100%);
@@ -185,6 +198,150 @@ main {
       p {
         font-size: 1rem;
         color: #333;
+      }
+    }
+  }
+}
+
+.sunshine-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fefbd8, #fffcc4);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  gap: 3rem;
+  font-family: 'Comic Sans MS', cursive;
+
+  &__chart {
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+  }
+
+  &__info {
+    max-width: 400px;
+
+    h2 {
+      font-size: 2rem;
+      color: #ff9900;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      color: #444;
+    }
+  }
+
+  &__figures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    div {
+      text-align: center;
+
+      strong {
+        font-size: 2.2rem;
+        color: #0073e6;
+        display: block;
+      }
+
+      span {
+        font-size: 0.9rem;
+        color: #333;
+      }
+    }
+  }
+}
+
+.btn-sunshine {
+  padding: 0.7rem 1.5rem;
+  background-color: #ffe135;
+  border: 2px solid #ffb347;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 2px 2px 0 #d1a000;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fff176;
+    box-shadow: 2px 2px 0 #b58900;
+  }
+}
+
+.sunshine-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  gap: 3rem;
+  font-family: $font;
+
+  .pie-chart {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+      $yellow 0% 60%,
+      $blue 60% 85%,
+      $pink 85% 100%
+    );
+    box-shadow: 0 0 0 6px white, 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .sunshine-stats__info {
+    max-width: 400px;
+
+    h2 {
+      font-size: 2rem;
+      color: $shine-orange;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    .sunshine-stats__figures {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      div {
+        text-align: center;
+
+        strong {
+          font-size: 2.2rem;
+          color: $blue-text;
+          display: block;
+        }
+
+        span {
+          font-size: 0.9rem;
+          color: #333;
+        }
+      }
+    }
+
+    .btn-sunshine {
+      padding: 0.7rem 1.5rem;
+      background-color: $yellow;
+      border: 2px solid $yellow-border;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 2px 2px 0 $yellow-shadow;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $yellow-light;
+        box-shadow: 2px 2px 0 #b58900;
       }
     }
   }
