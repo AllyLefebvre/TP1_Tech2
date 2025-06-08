@@ -41,7 +41,7 @@
 
           <div class="form">
             <input type="text" placeholder="Email" />
-            <button>Button</button>
+            <button>Envoyer</button>
           </div>
         </section>
         <section class="sunshine-section">
@@ -166,6 +166,30 @@
             </div>
           </div>
         </section>
+        <section class="map-section">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.717707096905!2d-122.1417823236045!3d47.65105227119401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d69e6f323ad%3A0x1bc8d9a86386ffbc!2sNintendo%20of%20America!5e0!3m2!1sfr!2sca!4v1749410642392!5m2!1sfr!2sca"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="form-container">
+            <h2>Nous Contacter</h2>
+            <form id="contactForm">
+              <div class="row">
+                <input type="text" name="nom" placeholder="Nom de famille" />
+                <input type="text" name="prenom" placeholder="Prénom" />
+              </div>
+              <input type="email" name="email" placeholder="Email" />
+              <textarea name="message" placeholder="message"></textarea>
+              <button type="submit">Submit</button>
+              <p id="formMessage" class="message"></p>
+            </form>
+          </div>
+        </section>
       </main>
     </main>
     <footer>
@@ -192,12 +216,15 @@
         </div>
 
         <div class="footer-contact">
-          <span><i class="fas fa-phone"></i>(819) 376-1721</span>
+          <a href="tel:+8193761721"
+            ><i class="fas fa-phone"></i>(819) 376-1721</a
+          >
           <a href="mailto:cegep@troisriviere.ca"
             ><i class="fas fa-envelope"></i> cegep@troisriviere.ca</a
           >
         </div>
       </div>
     </footer>
+    <script src="./js/formulaire.js"></script>
   </body>
 </html>
